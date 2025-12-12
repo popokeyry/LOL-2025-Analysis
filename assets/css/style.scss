@@ -1,0 +1,16 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 1em 0;
+  border: 1px solid #ddd;
+}
+
+.table-wrapper table {
+  min-width: 100%;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
