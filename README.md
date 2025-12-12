@@ -39,6 +39,8 @@ This dataset involves a significant size array with a multitude of columns which
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
+<iframe src="assets/result_vs_vision_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
 ---
 
 ## Assessment of Missingness
@@ -61,5 +63,13 @@ print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
 
 ## Hypothesis Testing
 
+<iframe src="assets/observed_high_v_low.html" width=800 height=600 frameBorder=0></iframe>
 
+<iframe src="assets/new_fig_high_v_low.html" width=800 height=600 frameBorder=0></iframe>
+
+## Framing a Prediction Problem
+
+## Baseline Model
+
+## Final Model
 ---
