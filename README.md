@@ -42,17 +42,15 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 
 <div class="table-wrapper" markdown="1">
 
-| gameid           | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   team kpm |   ckpm |   barons |   visionscore |   totalgold |
-|:-----------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|-----------:|-------:|---------:|--------------:|------------:|
-| LOLTMNT03_179647 | Blue   | top        |         1592 |        0 |       1 |        2 |         1 |     0.1131 |  0.603 |        0 |            17 |       10668 |
-| LOLTMNT03_179647 | Blue   | jng        |         1592 |        0 |       0 |        3 |         1 |     0.1131 |  0.603 |        0 |            29 |        7429 |
-| LOLTMNT03_179647 | Blue   | mid        |         1592 |        0 |       1 |        2 |         0 |     0.1131 |  0.603 |        0 |            20 |        9032 |
-| LOLTMNT03_179647 | Blue   | bot        |         1592 |        0 |       1 |        3 |         1 |     0.1131 |  0.603 |        0 |            10 |        9407 |
-| LOLTMNT03_179647 | Blue   | sup        |         1592 |        0 |       0 |        3 |         2 |     0.1131 |  0.603 |        0 |            82 |        5719 |
+| gameid           | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   barons |   visionscore |   totalgold |
+|:-----------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|---------:|--------------:|------------:|
+| LOLTMNT03_179647 | Blue   | top        |         1592 |        0 |       1 |        2 |         1 |        0 |            17 |       10668 |
+| LOLTMNT03_179647 | Blue   | jng        |         1592 |        0 |       0 |        3 |         1 |        0 |            29 |        7429 |
+| LOLTMNT03_179647 | Blue   | mid        |         1592 |        0 |       1 |        2 |         0 |        0 |            20 |        9032 |
+| LOLTMNT03_179647 | Blue   | bot        |         1592 |        0 |       1 |        3 |         1 |        0 |            10 |        9407 |
+| LOLTMNT03_179647 | Blue   | sup        |         1592 |        0 |       0 |        3 |         2 |        0 |            82 |        5719 |
 
 </div>
-
-<iframe src="assets/DFhead.html" width="100%" height="400px"></iframe>
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
