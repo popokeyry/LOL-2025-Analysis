@@ -39,6 +39,8 @@ This dataset involves a significant size array with a multitude of columns which
 
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `visionscore`, `totalgold`. 
 
+<div style="overflow-x: auto;">
+
 | gameid             | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   visionscore |   totalgold |
 |:-------------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|--------------:|------------:|
 | 11715-11715_game_1 | Blue   | top        |         2123 |        1 |       4 |        0 |         3 |            32 |       14706 |
@@ -46,6 +48,8 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 | 11715-11715_game_1 | Blue   | mid        |         2123 |        1 |       5 |        1 |         8 |            43 |       15720 |
 | 11715-11715_game_1 | Blue   | bot        |         2123 |        1 |       3 |        2 |         6 |            57 |       14688 |
 | 11715-11715_game_1 | Blue   | sup        |         2123 |        1 |       1 |        2 |        11 |           144 |        9762 |
+
+</div>
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
