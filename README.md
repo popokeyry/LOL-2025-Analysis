@@ -30,15 +30,17 @@ This dataset involves a significant size array with a multitude of columns which
 * `kills`: This column indicates the amount of champion eliminations a player or team contributed in a match as an integer.
 * `deaths`: This column indicates the amount of champion deaths a player or team had in a match as an integer.
 * `assists`: This column indicates the amount of champion assists a player or team had in a match as an integer, in which they contributed to the elimination but was not the final blow.
-* `barons`: The amount of barons, which is a type of objective that a player or team can defeat to gain awards, that were eliminated by a player or a team in a match.
+* `barons`: The amount of barons, a type of objective that a player or team can defeat to gain rewards, that were eliminated by a player or a team in a match.
 * `visionscore`: A metric that captures how much vision a player or team controls in a map. Higher vision scores is usually an indicator of a higher indication of information for a player or team.
-* `totalgold`: The in-game currency that players in League of Legends earn by completing objectives in the game, such as eliminating enemy players or 
+* `totalgold`: The total amount in-game currency per player in a match, earned by completing objectives in the game, such as eliminating enemy players or defeating baron. 
 
 ---
 
 # Cleaning and EDA
 
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
+
+<iframe src="DFhead.html" width="100%" height="400px"></iframe>
 
 | gameid           | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   barons |   visionscore |   totalgold |
 |:-----------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|---------:|--------------:|------------:|
