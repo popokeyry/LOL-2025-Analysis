@@ -22,6 +22,17 @@ This project is centered around the question "Is vision score an effective indic
 
 This dataset involves a significant size array with a multitude of columns which includes in-game statistics (like goldat10, the amount of gold at 10 minutes) alongside post-game evaluations (like result, a binary output based on if a player/team won or lost a match). The dataset includes 118,932 rows, and 164 columns. I will be limiting the columns to relevant columns that are  These columns include: 
 
+* `gameid`: 
+* `side`:
+* `position`:
+* `gamelength`:
+* `result`:
+* `kills`:
+* `deaths`:
+* `assists`:
+* `visionscore`:
+* `totalgold`: 
+
 
 
 ---
