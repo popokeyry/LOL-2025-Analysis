@@ -37,7 +37,11 @@ This dataset involves a significant size array with a multitude of columns which
 
 # Cleaning and EDA
 
-First, we keep the relevant columns of the dataset, `'side', `'position', `'gamelength', `'result', `'kills', `'deaths', `'assists', `'visionscore', 'totalgold'. 
+First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `visionscore`, `totalgold`. 
+
+```py
+print(relevant_cols.head().to_markdown(index=False))
+```
 
 | gameid             | side | position | gamelength | result | kills | deaths | assists | visionscore | total gold |
 |:-------------------|:-----|---------:|-----------:|-------:|------:|-------:|--------:|------------:|-----------:|
