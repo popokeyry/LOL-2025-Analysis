@@ -40,7 +40,7 @@ This dataset involves a significant size array with a multitude of columns which
 
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
 
-<iframe src="DFhead.html" width="100%" height="400px"></iframe>
+<iframe src="assets/DFhead.html" width="100%" height="400px"></iframe>
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
