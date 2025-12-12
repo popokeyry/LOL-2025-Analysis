@@ -37,6 +37,16 @@ This dataset involves a significant size array with a multitude of columns which
 
 # Cleaning and EDA
 
+First, we keep the relevant columns of the dataset, `'side', `'position', `'gamelength', `'result', `'kills', `'deaths', `'assists', `'visionscore', 'totalgold'. 
+
+| gameid             | side | position | gamelength | result | kills | deaths | assists | visionscore | total gold |
+|:-------------------|:-----|---------:|-----------:|-------:|------:|-------:|--------:|------------:|-----------:|
+| 11715-11715_game_1 | Blue	|      top |       2123 |      1 |     4 |      0 |       3 |          32 |      14706 |
+| 11715-11715_game_1 | Blue	|      jng |       2123 |      1 |     4 |      0 |       5 |          55 |      14586 |
+| 11715-11715_game_1 | Blue	|      mid |       2123 |      1 |     5 |      1 |       8 |          43 |      15720 |
+| 11715-11715_game_1 | Blue	|      bot |       2123 |      1 |     3 |      2 |       6 |          57 |      14688 |
+| 11715-11715_game_1 | Blue	|      sup |       2123 |      1 |     1 |      2 |      11 |         144 |       9762 |
+
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/result_vs_vision_distribution.html" width=800 height=600 frameBorder=0></iframe>
@@ -45,19 +55,6 @@ This dataset involves a significant size array with a multitude of columns which
 
 # Assessment of Missingness
 
-Here's what a Markdown table looks like. Note that the code for this table was generated _automatically_ from a DataFrame, using
-
-```py
-print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
-```
-
-| Quarter     |   Count |
-|:------------|--------:|
-| Fall 2020   |       3 |
-| Winter 2021 |       2 |
-| Spring 2021 |       6 |
-| Summer 2021 |       4 |
-| Fall 2021   |      55 |
 
 ---
 
