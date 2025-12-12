@@ -20,37 +20,33 @@ This project is centered around the question "Is vision score an effective indic
 
 ## Columns Introduction
 
-This dataset involves a significant size array with a multitude of columns which includes in-game statistics (like goldat10, the amount of gold at 10 minutes) alongside post-game evaluations (like result, a binary output based on if a player/team won or lost a match). The dataset includes 118,932 rows, and 164 columns. I will be limiting the columns to relevant columns that are  These columns include: 
+This dataset involves a significant size array with a multitude of columns which includes in-game statistics (like goldat10, the amount of gold at 10 minutes) alongside post-game evaluations (like result, a binary output based on if a player/team won or lost a match). The dataset includes 118,932 rows, and 164 columns. The columns indicate in-game statistics that were produced from this dataset of professional League of Legends matches. Some of these columns include: 
 
-* `gameid`: 
-* `side`:
-* `position`:
-* `gamelength`:
-* `result`:
-* `kills`:
-* `deaths`:
-* `assists`:
-* `visionscore`:
-* `totalgold`: 
+* `gameid`: A unique identifier for each professional match in the dataset. 
+* `side`: A column that designates which team each player is associated with in each match, known as 'Blue' side or 'Red' side.
+* `position`: This column signifies which role each player was assigned to in the match, with roles including 'top', 'jungle', 'mid', 'bot', and 'sup'.
+* `gamelength`: The amount of time each match lasted in seconds.
+* `result`: The outcome of a match, with a win noted as '1' and a loss noted as '0'.
+* `kills`: This column indicates the amount of champion eliminations a player or team contributed in a match as an integer.
+* `deaths`: This column indicates the amount of champion deaths a player or team had in a match as an integer.
+* `assists`: This column indicates the amount of champion assists a player or team had in a match as an integer, in which they contributed to the elimination but was not the final blow.
+* `barons`: The amount of barons, which is a type of objective that a player or team can defeat to gain awards, that were eliminated by a player or a team in a match.
+* `visionscore`: A metric that captures how much vision a player or team controls in a map. Higher vision scores is usually an indicator of a higher indication of information for a player or team.
+* `totalgold`: The in-game currency that players in League of Legends earn by completing objectives in the game, such as eliminating enemy players or 
 
 ---
 
 # Cleaning and EDA
 
-First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `visionscore`, `totalgold`. 
+First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
 
-<div style="overflow-x: auto;">
-
-  
-| gameid             | side   | position   | gamelength | result | kills | deaths | assists | visionscore | totalgold |
-|:-------------------|:-------|:-----------|-----------:|-------:|------:|-------:|--------:|------------:|----------:|
-| 11715-11715_game_1 | Blue   | top        | 2123       | 1      | 4     | 0      | 3       | 32          | 14706     |
-| 11715-11715_game_1 | Blue   | jng        | 2123       | 1      | 4     | 0      | 5       | 55          | 14586     |
-| 11715-11715_game_1 | Blue   | mid        | 2123       | 1      | 5     | 1      | 8       | 43          | 15720     |
-| 11715-11715_game_1 | Blue   | bot        | 2123       | 1      | 3     | 2      | 6       | 57          | 14688     |
-| 11715-11715_game_1 | Blue   | sup        | 2123       | 1      | 1     | 2      | 11      | 144         | 9762      |
-
-</div>
+| gameid           | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   barons |   visionscore |   totalgold |
+|:-----------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|---------:|--------------:|------------:|
+| LOLTMNT03_179647 | Blue   | top        |         1592 |        0 |       1 |        2 |         1 |        0 |            17 |       10668 |
+| LOLTMNT03_179647 | Blue   | jng        |         1592 |        0 |       0 |        3 |         1 |        0 |            29 |        7429 |
+| LOLTMNT03_179647 | Blue   | mid        |         1592 |        0 |       1 |        2 |         0 |        0 |            20 |        9032 |
+| LOLTMNT03_179647 | Blue   | bot        |         1592 |        0 |       1 |        3 |         1 |        0 |            10 |        9407 |
+| LOLTMNT03_179647 | Blue   | sup        |         1592 |        0 |       0 |        3 |         2 |        0 |            82 |        5719 
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
