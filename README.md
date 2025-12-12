@@ -6,9 +6,9 @@ by Ryan Conrad Atienza (ratienza@ucsd.edu)
 
 ---
 
-## Introduction
+# Introduction
 
-# Dataset Introduction
+## Dataset Introduction
 
 League of Legends is a video game created by Riot Games. It is one of the most popular games and has lots of data in the e-sports scene. The dataset I will be analyzing is a data set handled by Oracle's Elixir from the professional scene from 2025. 
 
@@ -18,7 +18,7 @@ League of Legends has many in-game statistics that contribute to a player's perf
 
 This project is centered around the question "Is vision score an effective indication on individual performance and prediction?" This question and dataset helps understand what statistic is most predictive of team success, allowing for insights into training, evaluation, and what matters besides a higher number of kills. 
 
-# Columns Introduction
+## Columns Introduction
 
 This dataset involves a significant size array with a multitude of columns which includes in-game statistics (like goldat10, the amount of gold at 10 minutes) alongside post-game evaluations (like result, a binary output based on if a player/team won or lost a match). The dataset includes 118,932 rows, and 164 columns. I will be limiting the columns to relevant columns that are  These columns include: 
 
@@ -35,7 +35,7 @@ This dataset involves a significant size array with a multitude of columns which
 
 ---
 
-## Cleaning and EDA
+# Cleaning and EDA
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
@@ -43,7 +43,7 @@ This dataset involves a significant size array with a multitude of columns which
 
 ---
 
-## Assessment of Missingness
+# Assessment of Missingness
 
 Here's what a Markdown table looks like. Note that the code for this table was generated _automatically_ from a DataFrame, using
 
@@ -61,15 +61,15 @@ print(counts[['Quarter', 'Count']].head().to_markdown(index=False))
 
 ---
 
-## Hypothesis Testing
+# Hypothesis Testing
 
 <iframe src="assets/observed_high_v_low.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/new_fig_high_v_low.html" width=800 height=600 frameBorder=0></iframe>
 
-## Framing a Prediction Problem
+# Framing a Prediction Problem
 
-## Baseline Model
+# Baseline Model
 
-## Final Model
+# Final Model
 ---
