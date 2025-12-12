@@ -40,8 +40,7 @@ This dataset involves a significant size array with a multitude of columns which
 
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
 
-<div style="overflow-x: auto; white-space: nowrap;">
-
+<div style="width: 100%; overflow-x: auto;">
 | gameid           | side   | position   |   gamelength |   result |   kills |   deaths |   assists |   team kpm |   ckpm |   barons |   visionscore |   totalgold |
 |:-----------------|:-------|:-----------|-------------:|---------:|--------:|---------:|----------:|-----------:|-------:|---------:|--------------:|------------:|
 | LOLTMNT03_179647 | Blue   | top        |         1592 |        0 |       1 |        2 |         1 |     0.1131 |  0.603 |        0 |            17 |       10668 |
@@ -49,7 +48,6 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 | LOLTMNT03_179647 | Blue   | mid        |         1592 |        0 |       1 |        2 |         0 |     0.1131 |  0.603 |        0 |            20 |        9032 |
 | LOLTMNT03_179647 | Blue   | bot        |         1592 |        0 |       1 |        3 |         1 |     0.1131 |  0.603 |        0 |            10 |        9407 |
 | LOLTMNT03_179647 | Blue   | sup        |         1592 |        0 |       0 |        3 |         2 |     0.1131 |  0.603 |        0 |            82 |        5719 |
-
 </div>
 
 <iframe src="assets/DFhead.html" width="100%" height="400px"></iframe>
