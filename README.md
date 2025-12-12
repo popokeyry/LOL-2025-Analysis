@@ -33,13 +33,11 @@ This dataset involves a significant size array with a multitude of columns which
 * `visionscore`:
 * `totalgold`: 
 
-
-
 ---
 
 ## Cleaning and EDA
 
-<iframe src="assets/10-80-enrollment.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
