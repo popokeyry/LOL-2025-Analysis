@@ -36,7 +36,7 @@ This dataset involves a significant size array with a multitude of columns which
 
 ---
 
-# Cleaning and EDA
+# Cleaning and Exploratory Data Analysis
 
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
 
@@ -49,6 +49,15 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 | LOLTMNT03_179647 | Blue   | mid        |         1592 |        0 |       1 |        2 |         0 |        0 |            20 |        9032 |
 | LOLTMNT03_179647 | Blue   | bot        |         1592 |        0 |       1 |        3 |         1 |        0 |            10 |        9407 |
 | LOLTMNT03_179647 | Blue   | sup        |         1592 |        0 |       0 |        3 |         2 |        0 |            82 |        5719 |
+
+</div>
+
+<div class="table-wrapper" markdown="1">
+
+|   result |   visionscore |   kills |   assists |   totalgold |
+|---------:|--------------:|--------:|----------:|------------:|
+|        0 |   2.13642e+06 |   97227 |    213568 | 4.93292e+08 |
+|        1 |   2.30754e+06 |  201225 |    469599 | 5.86831e+08 |
 
 </div>
 
@@ -74,4 +83,6 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 # Baseline Model
 
 # Final Model
+
+# Fairness Analysis
 ---
