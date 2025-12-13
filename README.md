@@ -38,7 +38,12 @@ This dataset involves a significant size array with a multitude of columns which
 
 # Cleaning and Exploratory Data Analysis
 
+## Data Cleaning
+
+For this dataset, the process involved some data cleaning steps.
 First, we keep the relevant columns of the dataset, `side`, `position`, `gamelength`, `result`, `kills`, `deaths`, `assists`, `barons`, `visionscore`, `totalgold`. 
+Each match includes 12 rows, 10 for each player, and 2 for the team overall. I decided to keep all of these rows, and create separate dataframes to include or exclude the 'team' rows based on what is necessary.
+Next, we check to see if any of the values of these columns are null or seem unusual. When analyzing the data, it seems that a column `datacompleteness` has two values: complete and partial. When a row has `datacompleteness` value of partial, many of the columns have null values, including column `baron` are null for individual players. Because of this, I created a helper function to fill the missing values in said rows. For each team where `baron` is null for individual players, the first player on each team gets the total baron eliminations, while the other players receive 0.
 
 <div class="table-wrapper" markdown="1">
 
@@ -52,23 +57,46 @@ First, we keep the relevant columns of the dataset, `side`, `position`, `gamelen
 
 </div>
 
-<div class="table-wrapper" markdown="1">
+## Univariate Analysis
 
-|   result |   visionscore |   kills |   assists |   totalgold |
-|---------:|--------------:|--------:|----------:|------------:|
-|        0 |   2.13642e+06 |   97227 |    213568 | 4.93292e+08 |
-|        1 |   2.30754e+06 |  201225 |    469599 | 5.86831e+08 |
-
-</div>
+I performed univariate analysis on two variables to further understand the distributions:
 
 <iframe src="assets/visionscore_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
+This histogram shows the distribution of the total team vision scores across the dataset matches. Vision scores are distributed nearly normal, meaning it is balanced and can be analyzed as an indication of player performance.
+
+I also looked at the distribution of total gold.
+
+<iframe src="assets/gold_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+This histogram shows that the distribution of total gold is roughly normal and slightly right skewed. This suggests that the progression of gold accumulation is balanced in professional matches and can follow patterns that can be analyzed.
+
+## Bivariate Analysis
+
+I performed bivariate analysis between the result of a team (whether they win or lose) and their vision score of the match.
+
 <iframe src="assets/result_vs_vision_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+This box plot helps to visualize this relationship, in which winning teams achieve higher vision scores than losing teams in professional games. This is an indicator that higher vision score is more likely to be attributed to winning than losing a match.
+
+## Interesting Aggregates
+
+Grouping the cleaned dataset without the 'team' rows in the `position` column, then sum the columns allows for some interesting aggregations to investigate:
+
+<div class="table-wrapper" markdown="1">
+
+|   result |   visionscore |   kills |   assists |   barons |   totalgold |
+|---------:|--------------:|--------:|----------:|---------:|------------:|
+|        0 |   2.35334e+06 |  105075 |    232555 |     1693 | 5.38138e+08 |
+|        1 |   2.54024e+06 |  217971 |    512408 |     8808 | 6.39891e+08 |
+
+</div>
+
+It seem as though there is a distinct difference between winning and losing teams, in which winning teams not only have higher vision scores as shown by the visualization, but kills, assists, number of barons eliminated, and total gold as well. Winning teams seem to have better statistics in comparison to the losing teams.
 
 ---
 
 # Assessment of Missingness
-
 
 ---
 
