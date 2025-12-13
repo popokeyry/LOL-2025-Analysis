@@ -238,6 +238,6 @@ Below is the histogram that shows the distribution of precision differences assu
 
 P-value: 0.0
 
-The p-value is < 0.05, meaning that we reject the null hypothesis. Therefore, this suggests that our model does not seem to be fair, but not against supports, in favor of them, as the model shows higher precision for support players than non-support players. Inherently, there seems to have some type of bias for support players or statistics that are more closely related to the support position
+The p-value is < 0.05, meaning that we reject the null hypothesis. Therefore, this suggests that our model does not seem to be fair, but not against supports, in favor of them, as the model shows higher precision for support players than non-support players. Inherently, there seems to have some type of bias for support players or statistics that are more closely related to the support position.
 
 ---
